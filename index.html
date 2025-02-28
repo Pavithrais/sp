@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="toolbar">
+        <button onclick="addRow()">➕ Add Row</button>
+        <button onclick="addColumn()">➕ Add Column</button>
+        <button onclick="deleteRow()">❌ Delete Row</button>
+        <button onclick="deleteColumn()">❌ Delete Column</button>
+        <button onclick="exportToCSV()">📤 Export CSV</button>
+        <input type="file" id="importFile" accept=".csv" onchange="importFromCSV()" />
+    </div>
+
+    <div class="spreadsheet-container">
+        <table id="spreadsheet"></table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
